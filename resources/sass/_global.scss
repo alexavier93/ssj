@@ -1,0 +1,56 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: $dark;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.cursor-zoom-in {
+    cursor: zoom-in;
+}
+
+.map {
+    iframe {
+        height: 350px !important;
+    }
+}
+
+.box-image-left {
+    box-shadow: -125px 120px 0px -90px #e28f26, -125px 2px 0px -90px #e28f26, -125px -119px 0px -90px #e28f26;
+}
+
+.box-image-right {
+    -webkit-box-shadow: 50px 50px 0px -12px $primary, -50px -50px 0px -12px $primary;
+    box-shadow: 50px 50px 0px -12px $primary, -50px -50px 0px -12px $primary;
+}
+
+.banner-page {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 350px;
+}
+
+.swiper {
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: $dark;
+    }
+    .swiper-pagination-bullet {
+        background: $dark;
+        opacity: 0.5;
+        width: 8px;
+        height: 8px;
+    }
+    .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: $dark;
+    }
+}
+
+.slick-prev:before,
+.slick-next:before {
+    content: initial;
+}

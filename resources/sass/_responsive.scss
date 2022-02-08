@@ -1,0 +1,150 @@
+// Responsive
+@media (max-width: 1300px) {}
+
+@media (max-width: 1200px) {
+    #header {
+        .header-nav {
+            .logo {
+                a {
+                    display: block;
+                }
+            }
+            .menu {
+                .nav {
+                    ul {
+                        li>a {
+                            padding: 0 10px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #home {
+        .main-slider {
+            .slider {
+                .slide {
+                    height: 700px;
+                }
+            }
+        }
+        .politica-de-qualidade {
+            .img-politica {
+                .bg-img-politica {
+                    height: 365px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    #header {
+        .header-nav {
+            padding: 15px 0;
+            .logo {
+                border: none;
+            }
+            .wrap {
+                align-items: inherit;
+            }
+            .menu {
+                display: none;
+            }
+        }
+    }
+    #home {
+        .main-slider {
+            height: 400px;
+        }
+        .banner-1 {
+            background: $primary !important;
+            height: 100%;
+            .text {
+                h1 {
+                    font-size: 3.5em;
+                }
+                h2 {
+                    font-size: 3em;
+                }
+            }
+        }
+        .banner-2 {
+            background: #e5e4dc !important;
+            height: 100%;
+            .text {
+                h1 {
+                    font-size: 3.5em;
+                }
+                h2 {
+                    font-size: 3em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 650px) {
+    #home {
+        .main-slider {
+            .slick-slider {
+                .slick-arrow.slick-next {
+                    right: 45px;
+                    bottom: 35px;
+                }
+                .slick-arrow.slick-prev {
+                    right: 80px;
+                    bottom: 35px;
+                }
+                .slick-dots {
+                    bottom: 52px;
+                    max-width: 150px;
+                    right: 120px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 450px) {
+    #header {
+        .header-top {
+            .nav-top {
+                display: none;
+            }
+        }
+        .header-nav {
+            .logo {
+                a {
+                    img {
+                        max-height: 60px;
+                    }
+                }
+                .logo-fix {
+                    padding: 0px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) {}
+
+@media all and (min-width: 992px) {
+    #header .header-nav .menu .nav .nav-item .dropdown-menu {
+        display: none;
+    }
+    #header .header-nav .menu .nav .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+    #header .header-nav .menu .nav .nav-item .dropdown-menu {
+        margin-top: -15px;
+    }
+}

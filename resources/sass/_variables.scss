@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+// Colors
+$primary: #e28f26;
+$secondary: #6f6f6e;
+$dark: #4c4c4e;
+$white: #ffffff;
+$black: #000000;
+$light: #80b092;
+$danger: #d41f25;
+$grey: #f4f4f4;
+$theme-colors: ( "primary": $primary,
+'secondary' :$secondary,
+"dark": $dark,
+"light": $white,
+"danger": $danger,
+"grey": $grey,
+"black": $black);
+$container-max-widths: ( sm: 540px,
+md: 720px,
+lg: 960px,
+xl: 1140px,
+);

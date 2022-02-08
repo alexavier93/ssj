@@ -1,0 +1,51 @@
+#footer {
+    background-image: url('/assets/images/bg-footer.jpg');
+    color: $dark;
+    .footer-top {
+        .form-contato {
+            form {
+                input {
+                    background-color: #575555;
+                    color: #2d2a2b;
+                    font-size: 16px;
+                    line-height: 1em;
+                }
+                textarea {
+                    background-color: #575555;
+                    color: #2d2a2b;
+                    font-size: 16px;
+                    line-height: 1em;
+                }
+                 ::-webkit-input-placeholder {
+                    /* Edge */
+                    color: #2d2a2b;
+                }
+                 :-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    color: #2d2a2b;
+                }
+                 ::placeholder {
+                    color: #2d2a2b;
+                }
+            }
+        }
+    }
+    .bottom-footer {
+        background: $primary;
+        padding: 10px 20px;
+        color: #fff;
+        height: 100%;
+        p {
+            margin: 0;
+            font-size: 14px;
+        }
+        .copy {
+            float: left;
+            padding: 5px 0;
+        }
+        .dev {
+            float: right;
+            text-align: right;
+        }
+    }
+}

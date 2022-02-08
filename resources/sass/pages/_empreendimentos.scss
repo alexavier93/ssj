@@ -1,0 +1,254 @@
+#empreendimentos {
+    background-image: url('/assets/images/bg-site.png');
+    .nav-pills {
+        .nav-link {
+            background-color: transparent;
+            color: $dark;
+            text-align: left;
+            font-weight: 700;
+            position: relative;
+        }
+        .nav-link.active {
+            &::before {
+                content: '';
+                background: $primary;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                position: absolute;
+                left: 0;
+                top: 14px;
+            }
+        }
+    }
+    .lista {
+        .empreendimento-item {
+            text-decoration: none;
+            .title {
+                z-index: 9;
+                position: absolute;
+                bottom: 0;
+                left: 10px;
+            }
+            .overlay {
+                background: #000;
+                background: linear-gradient( 0deg, rgba(0, 0, 0, .85), hsla(0, 0%, 100%, 0) 35%);
+                bottom: 0;
+                height: 100%;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 100%;
+            }
+            .empreendimento-info {
+                .intro {
+                    font-size: 12px;
+                }
+                ul {
+                    li {
+                        font-size: 12px;
+                    }
+                }
+                button {
+                    font-size: 12px;
+                    padding: 1px 5px;
+                }
+            }
+        }
+    }
+}
+
+#empreendimento {
+    .content {
+        .header {
+            margin-bottom: 30px;
+            .info-imovel {
+                .titulo {
+                    font-size: 30px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    color: $primary;
+                }
+                .localidade {
+                    color: #333;
+                    font-size: 18px;
+                    i {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .preco-imovel {
+                text-align: right;
+                h5 {
+                    color: #666;
+                    font-size: 20px;
+                }
+                .valor {
+                    font-size: 28px;
+                    font-weight: 500;
+                    color: #333;
+                }
+            }
+            .codigo {
+                text-transform: uppercase;
+                font-size: 16px;
+                strong {
+                    color: $primary;
+                }
+                span {
+                    color: #666;
+                }
+            }
+        }
+        .main-content {
+            .swiper {
+                .swiper-button-next,
+                .swiper-button-prev {
+                    background-color: #fff;
+                    opacity: .7;
+                    border-radius: 5px;
+                    &:after {
+                        font-size: 1.8rem;
+                        font-weight: 900;
+                    }
+                }
+            }
+            .nav-pills .nav-link {
+                border: 1px solid #d0d0d0;
+                margin-right: 5px;
+                color: #666;
+            }
+            .nav-pills .nav-link.active,
+            .nav-pills .show>.nav-link {
+                color: #fff;
+                background-color: $primary;
+                border-color: $primary;
+            }
+            #map-canvas {
+                width: 100%;
+                height: 500px;
+            }
+            .video-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                padding-top: 30px;
+                height: 0;
+                overflow: hidden;
+                iframe,
+                object,
+                embed {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .informacoes-imovel {
+                color: #333;
+                font-weight: 400;
+                font-size: 16px;
+                h4 {
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    margin-top: 15px;
+                }
+                .descricao {
+                    margin: 20px 0;
+                }
+                .detalhes {
+                    margin: 30px 0;
+                    ul {
+                        padding: 0;
+                        margin: 0;
+                        li {
+                            list-style: none;
+                            display: inline-block;
+                            width: 49%;
+                            margin-bottom: 5px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .diferenciais {
+                    margin: 30px 0;
+                    max-height: 250px;
+                    ul {
+                        padding: 0;
+                        margin: 0;
+                        li {
+                            list-style: none;
+                            display: inline-block;
+                            width: 32%;
+                            margin-bottom: 5px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .status {
+                    .status-item {
+                        .progress-bar {
+                            background: $primary;
+                        }
+                    }
+                }
+            }
+        }
+        .side-content {
+            .form-imovel {
+                form {
+                    input {
+                        background: #f4f4f4;
+                        font-size: 16px;
+                        font-weight: 400;
+                        padding: 15px;
+                        border: none;
+                    }
+                    textarea {
+                        background: #f4f4f4;
+                        font-size: 16px;
+                        font-weight: 400;
+                        padding: 15px;
+                        border: none;
+                    }
+                    button {
+                        background: $primary;
+                        border: none;
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 400;
+                        padding: 18px 20px;
+                        line-height: 1em;
+                    }
+                }
+            }
+            .box-info-contato {
+                ul {
+                    padding: 0;
+                    li {
+                        font-size: 15px;
+                        color: #333;
+                        display: flex;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                        font-weight: 500;
+                        .icon {
+                            display: flex;
+                            width: 35px;
+                            height: 35px;
+                            align-items: center;
+                            justify-content: center;
+                            margin-right: 10px;
+                            i {
+                                color: $primary;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

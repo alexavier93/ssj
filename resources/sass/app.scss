@@ -1,0 +1,13 @@
+@import 'variables';
+@import "~bootstrap/scss/bootstrap.scss";
+@import "@fancyapps/ui/dist/fancybox.css";
+@import "@fortawesome/fontawesome-free/css/all.css";
+// Site
+@import 'global';
+@import 'header';
+@import 'pages/home';
+@import 'pages/quemsomos';
+@import 'pages/empreendimentos';
+@import 'pages/blog';
+@import 'footer';
+@import 'responsive';
